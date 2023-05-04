@@ -20,6 +20,17 @@ $matches = [
         ],
 
     ],
+    [
+        'homeTeam' => [
+            'name' => 'San Antonio Spurs',
+            'points' => 99,
+        ],
+        'guestTeam' => [
+            'name' => 'Boston Celtics',
+            'points' => 111,
+        ],
+
+    ],
 
 ];
 
@@ -54,10 +65,12 @@ echo '</pre>';
     <div class="container py-5">
         <h1>Matches</h1>
         <?php foreach ($matches as $match) : ?>
+            <div class="card w-50 my-5 p-4">
+                <?php foreach ($match as $team) : ?>
+                    <p> <strong><?= $team['name']; ?>: </strong> <?= $team['points'] ?></p>
+                <?php endforeach; ?>
+            </div>
 
-            <?php foreach ($match as $team) : ?>
-                <p> <strong><?= $team['name']; ?>: </strong> <?= $team['points'] ?></p>
-            <?php endforeach; ?>
 
         <?php endforeach; ?>
 

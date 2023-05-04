@@ -6,16 +6,16 @@ $nameForm = $_GET['name'];
 $ageForm = $_GET['number'];
 $emailForm = $_GET['email'];
 
-var_dump($nameForm);
-var_dump(strlen($nameForm));
+// var_dump($nameForm);
+// var_dump(strlen($nameForm));
 
 
-var_dump($ageForm);
-var_dump(is_numeric($ageForm));
+// var_dump($ageForm);
+// var_dump(is_numeric($ageForm));
 
 
-var_dump($emailForm);
-var_dump(str_contains($emailForm, '.'));
+// var_dump($emailForm);
+// var_dump(str_contains($emailForm, '.'));
 
 
 if (strlen($nameForm) > 3 && is_numeric($ageForm) && str_contains($emailForm, '.')) {

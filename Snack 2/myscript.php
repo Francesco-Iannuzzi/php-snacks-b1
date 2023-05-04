@@ -18,7 +18,11 @@ var_dump($emailForm);
 var_dump(str_contains($emailForm, '.'));
 
 
-
+if (strlen($nameForm) > 3 && is_numeric($ageForm) && str_contains($emailForm, '.')) {
+    echo 'Acces';
+} else {
+    echo 'No Acces';
+}
 
 
 echo "</pre>";
